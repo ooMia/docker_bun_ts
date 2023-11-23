@@ -1,2 +1,3 @@
-./node_modules
-*.lockb
+node_modules
+lib
+bun.lockb

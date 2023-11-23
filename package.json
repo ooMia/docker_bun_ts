@@ -1,10 +1,43 @@
 {
-  "dependencies": {},
+  "packageManager": "bun@1.0.14",
+  "scripts": {
+    "prestart": "bun build src/index.ts --target=bun --outfile=lib/index.js",
+    "start": "bun run lib/index.js",
+    "server": "bun ./chat-server.bun.js",
+    "client": "bun ./chat-client.mjs"
+  },
+  "dependencies": {
+    "bufferutil": "4.0.7",
+    "utf-8-validate": "6.0.3",
+    "ws": "8.13.0"
+  },
   "devDependencies": {
     "bun-types": "^1.0.14",
+    "tslint": "^6.1.3",
     "typescript": "^5.3.2"
   },
-  "name": "dockerbunts",
-  "module": "index.ts",
-  "type": "module"
+  "name": "docker_bun_ts",
+  "module": "server.ts",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "basic bun http server running on docker",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ooMia/docker_bun_ts.git"
+  },
+  "author": {
+    "name": "Sean Kim",
+    "email": "0718ily@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ooMia/docker_bun_ts/issues"
+  },
+  "homepage": "https://github.com/ooMia/docker_bun_ts#readme",
+  "files": [
+    "./bin/*",
+    "./lib/*"
+  ],
+  "typings": "./lib/index.d.ts"
 }
