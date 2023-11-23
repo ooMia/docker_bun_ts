@@ -1,3 +1,5 @@
 git init
 touch commands.txt
 bun add -d bun-types
+bun add -d typescript
+npx tsc --init
