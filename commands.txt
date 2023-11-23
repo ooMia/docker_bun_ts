@@ -1,4 +1,5 @@
 git init
+touch .gitignore
 touch commands.txt
 bun add -d bun-types
 bun add -d typescript
