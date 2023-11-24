@@ -3,8 +3,8 @@
   "scripts": {
     "prestart": "bun build src/index.ts --target=bun --outfile=lib/index.js",
     "start": "bun run lib/index.js",
-    "server": "bun ./chat-server.bun.js",
-    "client": "bun ./chat-client.mjs"
+    "server": "bun --inspect ./chat-server.bun.js",
+    "client": "bun --inspect src/chat-client.mjs"
   },
   "dependencies": {
     "bufferutil": "4.0.7",

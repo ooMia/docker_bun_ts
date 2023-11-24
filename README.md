@@ -10,10 +10,10 @@ Run in Bun (`Bun.serve`):
 bun ./chat-server.bun.js
 ```
 
-Then, run the client script. By default, it will connect 32 clients. This client script can run in Bun, Node, or Deno
+Then, run the client script. By default, it will connect 32 clients. This client script can run in Bun.
 
 ```bash
-node ./chat-client.mjs
+bun ./chat-client.mjs
 ```
 
 The client script loops through a list of messages for each connected client and sends a message.

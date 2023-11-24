@@ -2,7 +2,7 @@
   "compilerOptions": {
     // add Bun type definitions
     "types": ["bun-types"],
-
+    "rootDirs": ["src"],
     // enable latest features
     "lib": ["ESNext"],
     "module": "esnext",
